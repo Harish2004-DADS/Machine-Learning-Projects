@@ -1,0 +1,12 @@
+| ID | Email Text                                                                       | Label |
+| -- | -------------------------------------------------------------------------------- | ----- |
+| 1  | "Congratulations! You’ve won a \$500 gift voucher. Click the link to claim now!" | Spam  |
+| 2  | "Exclusive deal!!! Get cheap medicines at 70% off. Limited time only."           | Spam  |
+| 3  | "You have been selected for a free iPhone. Register immediately!"                | Spam  |
+| 4  | "Work from home and earn \$500 per day. Join today!"                             | Spam  |
+| 5  | "Update your bank account details now or your account will be blocked."          | Spam  |
+| 6  | "Hi Sarah, can we reschedule our meeting to next Monday?"                        | Ham   |
+| 7  | "Reminder: Your gas bill payment is due on September 20th."                      | Ham   |
+| 8  | "Don’t forget about tomorrow’s team lunch at 1 PM in the cafeteria"              | Ham   |
+| 9  | "Please review the attached report and send me your feedback."                   | Ham   |
+| 10 | "Your flight booking is confirmed. Please find your ticket attached."            | Ham   |
