@@ -1,0 +1,160 @@
+.home-body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.result-body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #343441, #02273c);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Spam result background */
+.spam-bg {
+    font-family: 'Arial', sans-serif;
+    background-image: url("spam.jpg");  /* <-- rename your spam image and put it in static/ */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Ham result background */
+.ham-bg {
+    font-family: 'Arial', sans-serif;
+    background-image: url("ham.jpg");  /* <-- rename your ham image and put it in static/ */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 40px 40px;
+    text-align: center;
+    /* justify-items: center; */
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #040e86;
+    text-shadow: 1px 1px 5px #fda085;
+    text-align: center;
+    
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    /* padding: 15px; */
+    /* border-radius: 15px; */
+    border: 2px solid #7fd2d9;
+    font-size: 16px;
+    /* resize: none; */
+    text-align: center;
+    background-color: rgb(103, 187, 210);
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #5e16e3;
+    color: rgb(216, 14, 169);
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff2e63;
+}
+
+.result-box {
+    padding: 20px;
+    margin: 20px 0;
+    color: rgba(134, 51, 3, 0.971);
+}   
+
+.prediction {
+    font-weight: bold;
+    color: #ff2e63;
+    font-size: 18px;
+}
+
+.back-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff5f6d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #ff2e63;
+}
+
+/* Animation circles */
+.animation-box {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+}
+
+.floating-circle {
+    width: 20px; height: 20px;
+    background: rgba(255, 95, 109, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-circle:nth-child(2) {
+    width: 15px; height: 15px;
+    background: rgba(253, 160, 133, 0.6);
+    animation-duration: 5s;
+    left: 70%;
+}
+
+.floating-circle:nth-child(3) {
+    width: 25px; height: 25px;
+    background: rgba(255, 95, 109, 0.4);
+    animation-duration: 7s;
+    left: 40%;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(180deg); }
+    100% { transform: translateY(0) rotate(360deg); }
+}
