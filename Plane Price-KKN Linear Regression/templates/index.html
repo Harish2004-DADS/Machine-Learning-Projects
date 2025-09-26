@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plane Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home-body">
+    <div class="container">
+        <h1 class="title">✈️ Plane Price Prediction</h1>
+        <form action="/predict" method="POST" class="form-box">
+        <div class="form-grid">
+
+            <div class="from-column">
+            <select name="engine_type">
+                <option value="Piston">Piston</option>
+                <option value="Propjet">Propjet</option>
+                <option value="Jet">Jet</option>
+            </select><br>
+
+            <input type="number" name="hp" placeholder="Horsepower/Thrust" required><br>
+
+            <input type="number" name="max_speed" placeholder="Max Speed (Knots)" required><br>
+            </div>
+
+            <div class="from-column">
+            <input type="number" name="cruise" placeholder="Cruise Speed (Knots)" required><br>
+           
+            <input type="number" name="stall" placeholder="Stall Speed (Knots)" required><br>
+
+            <input type="number" name="fuel" placeholder="Fuel Capacity (gal/lbs)" required><br>
+            
+            <input type="number" name="all_climb" placeholder="All Engine Rate of Climb" required><br>
+            </div>  
+
+            <div class="from-column">
+            <input type="number" name="eng_out" placeholder="Engine-Out Rate of Climb" required><br>
+
+            <input type="number" name="takeoff" placeholder="Takeoff Distance (50ft)" required><br>
+            
+            <input type="number" name="landing" placeholder="Landing Distance (50ft)" required><br>
+
+            <input type="number" name="empty_weight" placeholder="Empty Weight (lbs)" required><br>
+            </div>
+            
+            <div class="from-column">
+            <input type="number" name="length" placeholder="Length (ft)" required><br>
+            
+            <input type="number" name="wingspan" placeholder="Wingspan (ft)" required><br>
+
+            <input type="number" name="range_nm" placeholder="Range (N.M.)" required><br>
+            </div>
+
+        </div>
+            <button type="submit" class="btn">Predict Price</button>
+        </form>
+    </div>
+</body>
+</html>
