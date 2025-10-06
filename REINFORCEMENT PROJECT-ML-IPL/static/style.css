@@ -1,0 +1,106 @@
+.home_bg{
+  font-family: Arial, sans-serif;
+  color: #11f1e9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url(home.jpg);
+  background-size: cover;                 /* 🔹 scale image to fit */
+  background-position: center;            /* 🔹 keep centered */
+  background-repeat: no-repeat;           /* 🔹 avoid tiling */
+}
+
+.result_bg{
+  font-family: Arial, sans-serif;
+  color: #06c9c0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url(result.jpg);
+  background-size: cover;                 /* 🔹 scale image to fit */
+  background-position: center;            /* 🔹 keep centered */
+  background-repeat: no-repeat;           /* 🔹 avoid tiling */
+  margin-top: 90px;
+}
+
+
+.form-row {
+      display: flex;
+      /* align-items: center; */
+      /* margin: 12px 0; */
+    }
+
+.form-row label {
+      /* width: 140px; space for labels */
+      /* font-weight: bold; */
+      color: limegreen;
+    }
+
+.form-row select {
+      flex: 1;
+      padding: 6px;
+      /* border-radius: 5px; */
+      /* border: 1px solid #ccc; */
+      /* min-width: 220px; */
+    }
+
+.container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+.bag {
+  width: 30%;
+  margin: auto;
+  color: #21ec12;
+}
+
+h1 {
+  color: #c60bb3;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 8px;
+  width: 80%;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2ecc71;
+}
+
+.winner {
+  color: #e74c3c;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}

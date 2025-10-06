@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="result_bg">
+  <div class="container">
+    <h1>Prediction Result 🏆</h1>
+    <p><strong>City:</strong> {{ data.City }}</p>
+    <p><strong>Team 1:</strong> {{ data.Team1 }}</p>
+    <p><strong>Team 2:</strong> {{ data.Team2 }}</p>
+    <p><strong>Toss Winner:</strong> {{ data['Toss Winner'] }}</p>
+    <p><strong>Toss Decision:</strong> {{ data['Toss Decision'] }}</p>
+
+    <h2>🏏 Predicted Winner: <span class="winner">{{ prediction }}</span></h2>
+
+    <a href="/">🔙 Go Back</a>
+  </div>
+</body>
+</html>
